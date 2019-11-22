@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_ExampleLoadmoreTable_ExampleLoadmoreTableUITests : NSObject
+@end
+@implementation PodsDummy_Pods_ExampleLoadmoreTable_ExampleLoadmoreTableUITests
+@end

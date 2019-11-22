@@ -1,0 +1,6 @@
+framework module Pods_ExampleLoadmoreTable_ExampleLoadmoreTableUITests {
+  umbrella header "Pods-ExampleLoadmoreTable-ExampleLoadmoreTableUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
