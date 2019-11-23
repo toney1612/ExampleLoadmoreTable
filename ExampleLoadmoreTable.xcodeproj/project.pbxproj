@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		1C52318ACFDB4C0CA57E5E94 /* Pods_ExampleLoadmoreTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5299F2313055C2770D9E131 /* Pods_ExampleLoadmoreTable.framework */; };
 		1E6380AA63CE6EC0BB9CBBC6 /* Pods_ExampleLoadmoreTableTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514EE986112C3187AD521B07 /* Pods_ExampleLoadmoreTableTests.framework */; };
+		65605B2D2388E9BF0055A70E /* HeroMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65605B2B2388E9BF0055A70E /* HeroMovieTableViewCell.swift */; };
+		65605B2E2388E9BF0055A70E /* HeroMovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65605B2C2388E9BF0055A70E /* HeroMovieTableViewCell.xib */; };
+		65605B332388EACC0055A70E /* HeroMovieCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65605B312388EACC0055A70E /* HeroMovieCardCollectionViewCell.swift */; };
+		65605B342388EACC0055A70E /* HeroMovieCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65605B322388EACC0055A70E /* HeroMovieCardCollectionViewCell.xib */; };
+		65605B362388EE310055A70E /* HeroMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65605B352388EE310055A70E /* HeroMovieModel.swift */; };
 		65D7DAE3238839F200CC4B94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D7DAE2238839F200CC4B94 /* AppDelegate.swift */; };
 		65D7DAE5238839F200CC4B94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D7DAE4238839F200CC4B94 /* SceneDelegate.swift */; };
 		65D7DAEA238839F200CC4B94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D7DAE8238839F200CC4B94 /* Main.storyboard */; };
@@ -47,6 +52,11 @@
 /* Begin PBXFileReference section */
 		0BDF7439895418D03DD8991B /* Pods-ExampleLoadmoreTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleLoadmoreTable.debug.xcconfig"; path = "Target Support Files/Pods-ExampleLoadmoreTable/Pods-ExampleLoadmoreTable.debug.xcconfig"; sourceTree = "<group>"; };
 		514EE986112C3187AD521B07 /* Pods_ExampleLoadmoreTableTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleLoadmoreTableTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65605B2B2388E9BF0055A70E /* HeroMovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroMovieTableViewCell.swift; sourceTree = "<group>"; };
+		65605B2C2388E9BF0055A70E /* HeroMovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroMovieTableViewCell.xib; sourceTree = "<group>"; };
+		65605B312388EACC0055A70E /* HeroMovieCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroMovieCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		65605B322388EACC0055A70E /* HeroMovieCardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroMovieCardCollectionViewCell.xib; sourceTree = "<group>"; };
+		65605B352388EE310055A70E /* HeroMovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroMovieModel.swift; sourceTree = "<group>"; };
 		65D7DADF238839F200CC4B94 /* ExampleLoadmoreTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleLoadmoreTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D7DAE2238839F200CC4B94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65D7DAE4238839F200CC4B94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +203,10 @@
 				65D7DB1C23883E5B00CC4B94 /* HeroMarvelTableViewCell.xib */,
 				65D7DB1F23883E7800CC4B94 /* HeroDCTableViewCell.swift */,
 				65D7DB2023883E7800CC4B94 /* HeroDCTableViewCell.xib */,
+				65605B2B2388E9BF0055A70E /* HeroMovieTableViewCell.swift */,
+				65605B2C2388E9BF0055A70E /* HeroMovieTableViewCell.xib */,
+				65605B312388EACC0055A70E /* HeroMovieCardCollectionViewCell.swift */,
+				65605B322388EACC0055A70E /* HeroMovieCardCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +224,7 @@
 			children = (
 				65D7DB262388429B00CC4B94 /* HeroMarlvelModel.swift */,
 				65D7DB28238842AC00CC4B94 /* HeroDcModel.swift */,
+				65605B352388EE310055A70E /* HeroMovieModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -348,6 +363,8 @@
 			files = (
 				65D7DB2223883E7800CC4B94 /* HeroDCTableViewCell.xib in Resources */,
 				65D7DB1E23883E5B00CC4B94 /* HeroMarvelTableViewCell.xib in Resources */,
+				65605B2E2388E9BF0055A70E /* HeroMovieTableViewCell.xib in Resources */,
+				65605B342388EACC0055A70E /* HeroMovieCardCollectionViewCell.xib in Resources */,
 				65D7DAEF238839F300CC4B94 /* LaunchScreen.storyboard in Resources */,
 				65D7DAEC238839F300CC4B94 /* Assets.xcassets in Resources */,
 				65D7DAEA238839F200CC4B94 /* Main.storyboard in Resources */,
@@ -479,7 +496,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				65D7DB1D23883E5B00CC4B94 /* HeroMarvelTableViewCell.swift in Sources */,
+				65605B362388EE310055A70E /* HeroMovieModel.swift in Sources */,
 				65D7DB272388429B00CC4B94 /* HeroMarlvelModel.swift in Sources */,
+				65605B2D2388E9BF0055A70E /* HeroMovieTableViewCell.swift in Sources */,
+				65605B332388EACC0055A70E /* HeroMovieCardCollectionViewCell.swift in Sources */,
 				65D7DB29238842AC00CC4B94 /* HeroDcModel.swift in Sources */,
 				65D7DAE3238839F200CC4B94 /* AppDelegate.swift in Sources */,
 				65D7DB242388420600CC4B94 /* LoadMoreTableViewModel.swift in Sources */,

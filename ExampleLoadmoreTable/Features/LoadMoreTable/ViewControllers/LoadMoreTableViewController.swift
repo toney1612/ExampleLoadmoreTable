@@ -9,6 +9,8 @@ extension LoadMoreTableViewModel.Row {
             return LoadMoreTableViewController.Constants.dc_Identifier
         case .marvel(model: _):
             return LoadMoreTableViewController.Constants.marvel_Identifier
+        case .movie(model: _):
+            return LoadMoreTableViewController.Constants.movie_identifier
         }
     }
 }
@@ -20,6 +22,7 @@ class LoadMoreTableViewController: UITableViewController {
     struct Constants {
         static let marvel_Identifier = "marvel_reused_cell"
         static let dc_Identifier = "dc_reused_cell"
+        static let movie_identifier = "movie_reused_cell"
     }
     
     override func viewDidLoad() {
@@ -45,6 +48,7 @@ class LoadMoreTableViewController: UITableViewController {
         self.tableView.backgroundColor = .white
         self.tableView.register(UINib(nibName: "HeroMarvelTableViewCell", bundle: nil), forCellReuseIdentifier: Constants.marvel_Identifier)
         self.tableView.register(UINib(nibName: "HeroDCTableViewCell", bundle: nil), forCellReuseIdentifier: Constants.dc_Identifier)
+        self.tableView.register(UINib(nibName: "HeroMovieTableViewCell", bundle: nil), forCellReuseIdentifier: Constants.movie_identifier)
         
     }
     
@@ -65,12 +69,16 @@ class LoadMoreTableViewController: UITableViewController {
         if let cell = cell as? HeroDCTableViewCell, case let .dc(d) = item {
             cell.configure(with: d)
         }
+        if let cell = cell as? HeroMovieTableViewCell, case let .movie(mv) = item {
+            cell.configure(with: mv)
+        }
         return cell
         
     }
     
     fileprivate func repalceData(){
         self.viewModel.replaceData()
+        self.viewModel = LoadMoreTableViewModel()
         self.tableView.reloadData()
         self.tableView.finishInfiniteScroll()
     }
